@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html lang="it">
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'GA_MEASUREMENT_ID');
-</script>
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-5NK2VQT2XX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- 1. PRIMO: CookieHub (DEVE essere il primo script) -->
+  <script src="https://cdn.cookiehub.eu/c2/70a0a5c2.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var cpm = {
+        settings: {
+          bannerPosition: "bottom-right",
+          theme: "dark",
+          language: "it"
+        }
+      };
+      window.cookiehub.load(cpm);
+    });
+  </script>
 
-  gtag('config', 'G-5NK2VQT2XX');
-</script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>quizAI | Trasforma il tuo Studio con l'Intelligenza Artificiale</title>
+  <!-- 2. SECONDO: Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5NK2VQT2XX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-5NK2VQT2XX');
+  </script>  <!-- CHIUSURA CORRETTA QUI -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>quizAI | Trasforma il tuo Studio con l'Intelligenza Artificiale</title>
     <meta name="description" content="Scansiona domande d'esame e ottieni risposte immediate con la nostra IA avanzata. La soluzione definitiva per studenti e professionisti.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
